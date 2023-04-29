@@ -13,7 +13,7 @@ Before you begin, you should have the following tools installed on your local ma
 ## Installation
 Follow these steps to install and run the Reddit clone app on your local machine:
 
-1) Clone this repository to your local machine: `git clone 
+1) Clone this repository to your local machine: `git clone https://github.com/afsha-munshi98/reddit-clone.git'
 2) Navigate to the project directory: `cd reddit-clone`
 3) Build the Docker image for the Reddit clone app: `docker build.-t afshamunshi/reddit-clone`
 4) create a namespace in kubernetes: 'kubectl create namespace -n reddit-clone-ns'
