@@ -6,6 +6,7 @@ metadata:
   name: reddit-clone-service
   namespace: reddit-clone-ns
 spec:
+  type: NodePort
   selector:
     # Selector for Pods
     app: reddit-clone
@@ -13,5 +14,5 @@ spec:
     # Port Map
   - port: 3000
     targetPort: 3000
-    protocol: TCP
-  type: NodePort
+    nodePort: 31000
+  
