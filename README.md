@@ -20,9 +20,9 @@ Follow these steps to install and run the Reddit clone app on your local machine
 5) Deploy the app to Kubernetes: `kubectl apply -f deployment.yaml -n reddit-clone-ns`
 6) Deploy the Service for deployment to Kubernetes: `kubectl apply -f service.yaml -n reddit-clone-ns`
 7) Enable Ingress by using Command: `minikube addons enable ingress`
-8) Expose the app as a Kubernetes deployment: `kubectl expose deployment reddit-clone-deployment -n reddit-clone-ns --type=NodePort --port=3000`
+8) Expose the app as a Kubernetes deployment: `kubectl expose deployment reddit-clone-deployment -n reddit-clone-ns --type=NodePort`
 9) Expose the service: 'kubectl port-forward svc/reddit-clone-service 3000:3000 --address 0.0.0.0 &'
-9) Create an Ingress resource: `kubectl apply -f ingress.yaml`
+9) Create an Ingress resource: `kubectl apply -f ingress.yml`
 
 
 ## Test Ingress DNS for the app:
